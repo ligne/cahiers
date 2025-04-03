@@ -1,0 +1,4 @@
+ul-indent:  # Unordered list indentation
+  indent: 4  # mkdocs requires four spaces to recognise a nested list
+line-length:
+  false  # FIXME
