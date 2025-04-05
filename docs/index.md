@@ -1,17 +1,8 @@
-# Welcome to MkDocs
+# Introduction
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+I'm one of those people who always has hundreds of open tabs across a dozen windows of multiple browsers.
+Partly this is because I'm bad at tidying them up when I'm done,
+but for the most part it's because they contain something that is useful (or that I feel *might* be useful),
+just not quite yet.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+I'm hoping that by writing them down here, I will be able to find them later when I actually need them.
