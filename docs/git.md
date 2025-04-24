@@ -1,4 +1,4 @@
-# git
+# Git
 
 Everyone's favourite VCS.
 
