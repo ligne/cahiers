@@ -58,3 +58,14 @@ If it also exists upstream, `git push --set-upstream origin new-name; git push o
 ### Converting to a branch
 
 Useful when the stash entry can no longer be popped cleanly. `git stash branch testchanges`.
+
+## .gitignore
+
+If you add rules to ignore vim droppings and similar in `~/.config/git/ignore`, you don't need to add them to every project you create.
+It's obvious when you think about it, isn't it?
+
+There is a collection of per-language rules [here](https://github.com/github/gitignore).
+
+To ignore something that's only relevant locally or for a short time: `echo boring/ >> .git/info/exclude`.
+If it's a directory, doing `echo \* > boring/.gitignore` means the ignore will automatically get cleaned up when it's deleted.
+Some tools (including `uv`, `pytest` and `mypy`) do this automatically to their cache directories, so check before ignoring them explicitly.
