@@ -40,6 +40,11 @@ The `--files` or `--all-files` options [override this](https://github.com/pre-co
 
 Occasionally run `pre-commit autoupdate` to keep the hooks up-to-date.
 
+### Overriding
+
+It's still possible to force a commit that would normally be rejected.
+Either `SKIP=hook1,hook2 git commit` to ignore specific hooks, or `git commit --no-verify` to ignore the whole lot.
+
 ## Troubleshooting
 
 Solutions to [some common problems](https://stefaniemolin.com/articles/devx/pre-commit/troubleshooting-guide/).
