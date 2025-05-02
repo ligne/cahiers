@@ -1,5 +1,9 @@
 site_name: Cahiers Seyès
 site_url: https://ligne.github.io/cahiers/
+repo_url: https://github.com/ligne/cahiers/
+edit_uri: edit/main/docs/
 theme:
   name: material
   favicon: img/favicon.ico
+  features:
+    - content.action.edit
