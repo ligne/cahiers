@@ -33,3 +33,5 @@ mkdocs serve
 
 Full documentation [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
 The gist is: run `mkdocs gh-deploy` and it will soon appear on [your github site](https://ligne.github.io/cahiers/).
+
+There is a [GitHub Action](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions) to do this.
