@@ -7,3 +7,4 @@ theme:
   favicon: img/favicon.ico
   features:
     - content.action.edit
+    - toc.integrate  # not compatible with section index pages (navigation.indexes)
