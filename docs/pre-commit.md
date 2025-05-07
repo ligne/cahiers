@@ -20,6 +20,7 @@ Documentation is [here](https://pre-commit.com/#plugins).
 ### Some useful hooks
 
 * [Markdown](https://github.com/DavidAnson/markdownlint-cli2?tab=readme-ov-file#pre-commit) | [Notes](markdown.md#pre-commit)
+* [Typos](https://github.com/crate-ci/typos?tab=readme-ov-file) for spell-checking code
 * Many more [here](https://pre-commit.com/hooks.html)
 
 It's also possible to [write your own](https://stefaniemolin.com/articles/devx/pre-commit/hook-creation-guide/).
