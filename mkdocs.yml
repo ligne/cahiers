@@ -8,3 +8,7 @@ theme:
   features:
     - content.action.edit
     - toc.integrate  # not compatible with section index pages (navigation.indexes)
+markdown_extensions:
+  - toc:
+      permalink: true
+      baselevel: 2
