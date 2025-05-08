@@ -11,4 +11,3 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true
-      baselevel: 2
