@@ -1,0 +1,6 @@
+linters
+mkdocs
+mypy
+pytest
+testchanges
+VCS

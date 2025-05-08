@@ -20,3 +20,7 @@ repos:
     rev: v1.32.0
     hooks:
       - id: typos
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v9.0.0
+    hooks:
+      - id: cspell # Spell-check changed files

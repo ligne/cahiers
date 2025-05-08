@@ -1,0 +1,19 @@
+version: "0.2"
+language: en-GB
+useGitignore: true
+ignorePaths:
+  - "cspell-dict.txt"
+  - ".github/**"
+  - ".gitignore"
+  - "LICENSE"
+  - ".markdownlint.yaml"
+  - "mkdocs.yml"
+  - ".pre-commit-config.yaml"
+minWordLength: 3
+dictionaryDefinitions:
+  - name: local
+    path: "./cspell-dict.txt"
+    description: Custom local dictionary
+    addWords: true
+dictionaries:
+  - local
