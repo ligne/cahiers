@@ -1,4 +1,5 @@
 linters
+mdformat
 mkdocs
 mypy
 pyproject
