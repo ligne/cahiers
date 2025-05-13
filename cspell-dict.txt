@@ -1,6 +1,7 @@
 linters
 mkdocs
 mypy
+pyproject
 pytest
 testchanges
 VCS
