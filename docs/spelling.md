@@ -18,5 +18,5 @@ It can use its own `.typos.toml`, but it can also be included in `pyproject.toml
 * Significantly slower.
 
 Configure it using `.cspell.yaml`.
-A [basic guide](https://cspell.org/docs/getting-started), including how to seed a local dictionary quickly.
+A [basic guide](https://cspell.org/docs/getting-started), including how to seed a local dictionary quickly, and a [detailed reference](https://cspell.org/docs/Configuration).
 In addition to specifying additional project-local words, these custom dictionaries are [very flexible](https://cspell.org/docs/dictionaries/custom-dictionaries).
