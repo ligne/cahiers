@@ -19,9 +19,9 @@ Documentation is [here](https://pre-commit.com/#plugins).
 
 ### Some useful hooks
 
-* [Markdown](https://github.com/DavidAnson/markdownlint-cli2?tab=readme-ov-file#pre-commit) | [Notes](markdown.md#pre-commit)
-* [Spell-checking](spelling.md) code and prose.
-* Many more [here](https://pre-commit.com/hooks.html)
+- [Markdown](https://github.com/DavidAnson/markdownlint-cli2?tab=readme-ov-file#pre-commit) | [Notes](markdown.md#pre-commit)
+- [Spell-checking](spelling.md) code and prose.
+- Many more [here](https://pre-commit.com/hooks.html)
 
 It's also possible to [write your own](https://stefaniemolin.com/articles/devx/pre-commit/hook-creation-guide/).
 

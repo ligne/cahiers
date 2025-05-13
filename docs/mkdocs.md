@@ -25,9 +25,9 @@ mkdocs serve
 
 ### Images
 
-* Put them in `docs/img`. Reference with the usual syntax: `![alt text](img/name_of_file.png)`.
-* Custom favicon: the standard MkDocs will use `docs/img/favicon.ico` [if present](https://www.mkdocs.org/getting-started/#changing-the-favicon-icon).
-  Material for MkDocs prefers `assets/images/favicon.png` but this can be overridden in the config.
+- Put them in `docs/img`. Reference with the usual syntax: `![alt text](img/name_of_file.png)`.
+- Custom favicon: the standard MkDocs will use `docs/img/favicon.ico` [if present](https://www.mkdocs.org/getting-started/#changing-the-favicon-icon).
+    Material for MkDocs prefers `assets/images/favicon.png` but this can be overridden in the config.
 
 ## Deploying
 
