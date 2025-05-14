@@ -1,0 +1,8 @@
+[project]
+name = "cahiers"
+version = "0.1"
+requires-python = ">=3.11"
+dependencies = [
+        "mkdocs-material",
+        "mkdocs-awesome-nav",
+]

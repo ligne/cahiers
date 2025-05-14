@@ -9,6 +9,7 @@ ignorePaths:
   - ".markdownlint.yaml"
   - "mkdocs.yml"
   - ".pre-commit-config.yaml"
+  - "pyproject.toml"
 minWordLength: 3
 dictionaryDefinitions:
   - name: local
