@@ -43,6 +43,11 @@ plugins:
 However redirecting anchors needs to be done within the browser.
 See [uv's codebase](https://github.com/astral-sh/uv/blob/0.7.3/docs/js/extra.js#L55) for one possible implementation.
 
+## Navigation
+
+Material for MkDocs has [a lot of interesting options](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/).
+If these are not enough, there's always [Awesome Nav](https://lukasgeiter.github.io/mkdocs-awesome-nav/features/nav/).
+
 ## Deploying
 
 Full documentation [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
