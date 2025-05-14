@@ -29,6 +29,20 @@ mkdocs serve
 - Custom favicon: the standard MkDocs will use `docs/img/favicon.ico` [if present](https://www.mkdocs.org/getting-started/#changing-the-favicon-icon).
     Material for MkDocs prefers `assets/images/favicon.png` but this can be overridden in the config.
 
+## Redirects
+
+To avoid link-rot when moving pages about, use the `mkdocs-redirects` plugin:
+
+```yaml
+plugins:
+  - redirects:
+      redirect_maps:
+        "old-path.md": "new/path.md"
+```
+
+However redirecting anchors needs to be done within the browser.
+See [uv's codebase](https://github.com/astral-sh/uv/blob/0.7.3/docs/js/extra.js#L55) for one possible implementation.
+
 ## Deploying
 
 Full documentation [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
