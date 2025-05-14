@@ -19,3 +19,7 @@ validation:
 plugins:
   - search
   - awesome-nav
+  - git-revision-date-localized:
+      type: timeago
+      enable_creation_date: true
+      timezone: Europe/London
