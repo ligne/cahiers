@@ -25,5 +25,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - uses: astral-sh/setup-uv@v1
+        with:
+          version: "latest"
+      - run: uv run mkdocs gh-deploy --force
