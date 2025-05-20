@@ -48,6 +48,23 @@ See [uv's codebase](https://github.com/astral-sh/uv/blob/0.7.3/docs/js/extra.js#
 Material for MkDocs has [a lot of interesting options](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/).
 If these are not enough, there's always [Awesome Nav](https://lukasgeiter.github.io/mkdocs-awesome-nav/features/nav/).
 
+## Creation and revision dates
+
+Add and [configure](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html) the plugin:
+
+```yaml
+plugins:
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      type: timeago
+      enable_creation_date: true
+      timezone: Europe/London
+```
+
+The Github action will [also need tweaking](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html#note-when-using-build-systems-like-github-actions).
+
+Not all themes support this out of the box (Material for MkDocs [does](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#revisioning)).
+
 ## Deploying
 
 Full documentation [here](https://www.mkdocs.org/user-guide/deploying-your-docs/).
