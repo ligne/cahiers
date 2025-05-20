@@ -55,6 +55,14 @@ If it also exists upstream, `git push --set-upstream origin new-name; git push o
 
 ## Stash
 
+### Stash and the index
+
+By default `git stash [push]` will also stash the contents of the index.
+To only stash unstaged changes, add the `-k` option.
+
+Alternatively, it's possible to stash *only* staged changes with `-S`.
+This is equivalent to committing them to a new branch, but quicker (and arguably tidier).
+
 ### Converting to a branch
 
 Useful when the stash entry can no longer be popped cleanly. `git stash branch testchanges`.
