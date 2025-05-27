@@ -2,6 +2,7 @@ linters
 mdformat
 mkdocs
 mypy
+pygrep
 pyproject
 pytest
 testchanges

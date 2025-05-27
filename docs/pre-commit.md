@@ -23,7 +23,21 @@ Documentation is [here](https://pre-commit.com/#plugins).
 - [Spell-checking](spelling.md) code and prose
 - Many more [here](https://pre-commit.com/hooks.html)
 
+### Custom hooks
+
 It's also possible to [write your own](https://stefaniemolin.com/articles/devx/pre-commit/hook-creation-guide/).
+
+Most of the time, [repository-local hooks](https://pre-commit.com/#repository-local-hooks) should be sufficient.
+These are configured in `.pre-commit-config.yaml` using the settings [here](https://pre-commit.com/#new-hooks).
+
+- The [`fail`](https://pre-commit.com/#fail) "language" will raise an error if it finds any matching files.
+    This can be used to enforce a file naming scheme.
+- Use [`pygrep`](https://pre-commit.com/#pygrep) to check file contents using regexes.
+    There are some pre-canned rules [here](https://github.com/pre-commit/pygrep-hooks).
+- [`script`](https://pre-commit.com/#script) and [`system`](https://pre-commit.com/#system) run local and system-level commands respectively.
+    The former might be useful to wrap a custom lint command, via a script in the repository.
+    The latter could be used to invoke a tool that might reasonably be assumed to exist in the dev environment.
+    Either way, the command is specified with the `entry` key, including any arguments required.
 
 ## Operating
 
