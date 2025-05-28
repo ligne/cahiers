@@ -1,7 +1,9 @@
+appdirs
 linters
 mdformat
 mkdocs
 mypy
+platformdirs
 pygrep
 pyproject
 pytest
