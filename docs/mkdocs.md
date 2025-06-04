@@ -25,9 +25,23 @@ mkdocs serve
 
 ### Images
 
-- Put them in `docs/img`. Reference with the usual syntax: `![alt text](img/name_of_file.png)`.
-- Custom favicon: the standard MkDocs will use `docs/img/favicon.ico` [if present](https://www.mkdocs.org/getting-started/#changing-the-favicon-icon).
-    Material for MkDocs prefers `assets/images/favicon.png` but this can be overridden in the config.
+Put images in `docs/img/`.
+They can then be referenced with the usual syntax: `![alt text](img/name_of_file.png)`.
+
+Custom favicon: the standard MkDocs will use `docs/img/favicon.ico` [if present](https://www.mkdocs.org/getting-started/#changing-the-favicon-icon).
+Material for MkDocs prefers `assets/images/favicon.png` but this can be overridden in the config.
+
+### CSS and JavaScript
+
+Like images, these [go in the document root](https://squidfunk.github.io/mkdocs-material/customization/#adding-assets), for example in `docs/{js,css}/`.
+They then need to be listed in `mkdocs.yml`, using the path relative to the document root:
+
+```yaml
+extra_css:
+  - css/blah.css
+extra_javascript:
+  - js/blah.js
+```
 
 ## Redirects
 
