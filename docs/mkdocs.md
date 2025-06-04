@@ -62,6 +62,25 @@ See [uv's codebase](https://github.com/astral-sh/uv/blob/0.7.3/docs/js/extra.js#
 Material for MkDocs has [a lot of interesting options](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/).
 If these are not enough, there's always [Awesome Nav](https://lukasgeiter.github.io/mkdocs-awesome-nav/features/nav/).
 
+### Table of contents
+
+Each page gets a table of contents, populated with its sub-headings.
+By default the Material theme puts this in a secondary sidebar on the right-hand side.
+
+To collapse it into the main sidebar, use the [`toc.integrate`](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration) feature.
+This is not compatible with the feature that allows sections to have their own index pages, [`navigation.indexes`](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages).
+
+Alternatively, it's possible to move the table of contents to the left by [adding a custom CSS file](#css-and-javascript) to change the secondary sidebar's `order` property:
+
+```css
+/* TOC on the left */
+.md-sidebar--secondary {
+  order: 0;
+}
+```
+
+This comes at the cost of having a big white space near the middle of the screen.
+
 ## Creation and revision dates
 
 Add and [configure](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html) the plugin:
