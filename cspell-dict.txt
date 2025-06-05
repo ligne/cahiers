@@ -4,6 +4,7 @@ mdformat
 mkdocs
 mypy
 platformdirs
+pycountry
 pygrep
 pyproject
 pytest

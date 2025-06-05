@@ -20,3 +20,9 @@ Determine platform-specific directories for config files and user data.
 A fork of the sadly-unmaintained `appdirs`.
 
 [Repo](https://github.com/tox-dev/platformdirs/tree/main) | [Docs](https://platformdirs.readthedocs.io/)
+
+## pycountry
+
+Wraps Debian's [`iso-codes` data](https://salsa.debian.org/iso-codes-team/iso-codes) databases for ISO country, language, and script codes, along with their translations.
+
+[Repo and docs](https://github.com/pycountry/pycountry)
