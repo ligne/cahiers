@@ -9,6 +9,9 @@ theme:
     - content.action.edit
     - toc.integrate  # not compatible with section index pages (navigation.indexes)
 markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
   - toc:
       permalink: true
 validation:
