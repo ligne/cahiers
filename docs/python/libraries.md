@@ -26,3 +26,11 @@ A fork of the sadly-unmaintained `appdirs`.
 Wraps Debian's [`iso-codes` data](https://salsa.debian.org/iso-codes-team/iso-codes) databases for ISO country, language, and script codes, along with their translations.
 
 [Repo and docs](https://github.com/pycountry/pycountry)
+
+## stamina
+
+Decorator-based library for handling transient errors.
+Detects exceptions and retries with exponential backoff, capping the number of retries and total time.
+Basically just applies reasonable defaults to [tenacity](https://github.com/jd/tenacity).
+
+[Repo](https://github.com/hynek/stamina) | [Docs](https://stamina.hynek.me/en/stable/)
