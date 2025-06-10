@@ -367,6 +367,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#css-and-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSS and JavaScript
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -385,6 +394,39 @@
   <a href="#navigation" class="md-nav__link">
     <span class="md-ellipsis">
       Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of contents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-highlighting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code highlighting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-and-revision-dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creation and revision dates
     </span>
   </a>
   
@@ -425,6 +467,120 @@
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/collections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Collections
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/libraries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Libraries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -479,33 +635,76 @@
 <p><a href="https://www.mkdocs.org/">MkDocs</a> is the static site generator used for this site.</p>
 <h2 id="initialising">Initialising<a class="headerlink" href="#initialising" title="Permanent link">&para;</a></h2>
 <p>In a clean directory:</p>
-<pre><code class="language-sh">uv pip install mkdocs
-mkdocs new .
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>.
+</code></pre></div>
 <h2 id="editing">Editing<a class="headerlink" href="#editing" title="Permanent link">&para;</a></h2>
 <p>Create <a href="../markdown/">Markdown</a> files in the <code>docs/</code> directory.</p>
 <p>Non-markdown files can go alongside them and will be copied as-is.</p>
 <p>MkDocs comes with a test server that automatically reloads on changes:</p>
-<pre><code class="language-sh">mkdocs serve
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdocs<span class="w"> </span>serve
+</code></pre></div>
 <h3 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Put them in <code>docs/img</code>. Reference with the usual syntax: <code>![alt text](img/name_of_file.png)</code>.</li>
-<li>Custom favicon: the standard MkDocs will use <code>docs/img/favicon.ico</code> <a href="https://www.mkdocs.org/getting-started/#changing-the-favicon-icon">if present</a>.
-    Material for MkDocs prefers <code>assets/images/favicon.png</code> but this can be overridden in the config.</li>
-</ul>
+<p>Put images in <code>docs/img/</code>.
+They can then be referenced with the usual syntax: <code>![alt text](img/name_of_file.png)</code>.</p>
+<p>Custom favicon: the standard MkDocs will use <code>docs/img/favicon.ico</code> <a href="https://www.mkdocs.org/getting-started/#changing-the-favicon-icon">if present</a>.
+Material for MkDocs prefers <code>assets/images/favicon.png</code> but this can be overridden in the config.</p>
+<h3 id="css-and-javascript">CSS and JavaScript<a class="headerlink" href="#css-and-javascript" title="Permanent link">&para;</a></h3>
+<p>Like images, these <a href="https://squidfunk.github.io/mkdocs-material/customization/#adding-assets">go in the document root</a>, for example in <code>docs/{js,css}/</code>.
+They then need to be listed in <code>mkdocs.yml</code>, using the path relative to the document root:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">extra_css</span><span class="p">:</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css/blah.css</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">extra_javascript</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">js/blah.js</span>
+</code></pre></div>
 <h2 id="redirects">Redirects<a class="headerlink" href="#redirects" title="Permanent link">&para;</a></h2>
 <p>To avoid link-rot when moving pages about, use the <code>mkdocs-redirects</code> plugin:</p>
-<pre><code class="language-yaml">plugins:
-  - redirects:
-      redirect_maps:
-        &quot;old-path.md&quot;: &quot;new/path.md&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">redirects</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="nt">redirect_maps</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="s">&quot;old-path.md&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;new/path.md&quot;</span>
+</code></pre></div>
 <p>However redirecting anchors needs to be done within the browser.
 See <a href="https://github.com/astral-sh/uv/blob/0.7.3/docs/js/extra.js#L55">uv's codebase</a> for one possible implementation.</p>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
 <p>Material for MkDocs has <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/">a lot of interesting options</a>.
 If these are not enough, there's always <a href="https://lukasgeiter.github.io/mkdocs-awesome-nav/features/nav/">Awesome Nav</a>.</p>
+<h3 id="table-of-contents">Table of contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h3>
+<p>Each page gets a table of contents, populated with its sub-headings.
+By default the Material theme puts this in a secondary sidebar on the right-hand side.</p>
+<p>To collapse it into the main sidebar, use the <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-integration"><code>toc.integrate</code></a> feature.
+This is not compatible with the feature that allows sections to have their own index pages, <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages"><code>navigation.indexes</code></a>.</p>
+<p>Alternatively, it's possible to move the table of contents to the left by <a href="#css-and-javascript">adding a custom CSS file</a> to change the secondary sidebar's <code>order</code> property:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c">/* TOC on the left */</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">.</span><span class="nc">md-sidebar--secondary</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">order</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>This comes at the cost of having a big white space near the middle of the screen.</p>
+<h2 id="code-highlighting">Code highlighting<a class="headerlink" href="#code-highlighting" title="Permanent link">&para;</a></h2>
+<p>First of all, this relies on code blocks being annotated with the language in use.
+(This is checked automatically by <code>markdownlint</code>.)
+In most cases this is just the <a href="https://pygments.org/languages/">name of the language</a>.
+There is also <code>console</code>, for a series of commands (including prompts) interspersed with their output.</p>
+<p>A basic config looks like this:</p>
+<div class="highlight"><span class="filename">mkdocs.yml</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.highlight</span><span class="p">:</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">      </span><span class="nt">anchor_linenums</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+</code></pre></div>
+<p>As seen here, this also allows a filename (or other information) to be displayed, by adding a <code>title</code> attribute to the first line of the block.</p>
+<p>To highlight inline code blocks, enable the <code>pymdownx.inlinehilite</code> extension and start the block with <code>#!</code> followed by the language name.</p>
+<p>Full documentation <a href="https://squidfunk.github.io/mkdocs-material/reference/code-blocks/">here</a>.</p>
+<h2 id="creation-and-revision-dates">Creation and revision dates<a class="headerlink" href="#creation-and-revision-dates" title="Permanent link">&para;</a></h2>
+<p>Add and <a href="https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html">configure</a> the plugin:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">      </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kt">!ENV</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CI</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">false</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">timeago</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">      </span><span class="nt">enable_creation_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">      </span><span class="nt">timezone</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Europe/London</span>
+</code></pre></div>
+<p>The Github action will <a href="https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html#note-when-using-build-systems-like-github-actions">also need tweaking</a>.</p>
+<p>Not all themes support this out of the box (Material for MkDocs <a href="https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#revisioning">does</a>).</p>
 <h2 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h2>
 <p>Full documentation <a href="https://www.mkdocs.org/user-guide/deploying-your-docs/">here</a>.
 The gist is: run <code>mkdocs gh-deploy</code> and it will soon appear on <a href="https://ligne.github.io/cahiers/">your github site</a>.</p>
@@ -532,7 +731,7 @@ The gist is: run <code>mkdocs gh-deploy</code> and it will soon appear on <a hre
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="May 14, 2025 13:18:34"><span class="timeago" datetime="2025-05-14T13:18:34+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="May 14, 2025 13:18:34">2025-05-14</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 10, 2025 13:47:31 BST"><span class="timeago" datetime="2025-06-10T13:47:31+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 10, 2025 13:47:31 BST">2025-06-10</span>
   </span>
 
     
@@ -542,7 +741,7 @@ The gist is: run <code>mkdocs gh-deploy</code> and it will soon appear on <a hre
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="May 2, 2025 17:37:11"><span class="timeago" datetime="2025-05-02T17:37:11+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="May 2, 2025 17:37:11">2025-05-02</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="May 2, 2025 17:37:11 BST"><span class="timeago" datetime="2025-05-02T17:37:11+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="May 2, 2025 17:37:11 BST">2025-05-02</span>
   </span>
 
     
