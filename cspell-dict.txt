@@ -1,4 +1,6 @@
 appdirs
+inlinehilite
+linenums
 linters
 mdformat
 mkdocs
@@ -6,8 +8,10 @@ mypy
 platformdirs
 pycountry
 pygrep
+pymdownx
 pyproject
 pytest
+superfences
 testchanges
 timeago
 timezone

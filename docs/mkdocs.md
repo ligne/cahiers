@@ -81,6 +81,27 @@ Alternatively, it's possible to move the table of contents to the left by [addin
 
 This comes at the cost of having a big white space near the middle of the screen.
 
+## Code highlighting
+
+First of all, this relies on code blocks being annotated with the language in use.
+(This is checked automatically by `markdownlint`.)
+In most cases this is just the [name of the language](https://pygments.org/languages/).
+There is also `console`, for a series of commands (including prompts) interspersed with their output.
+
+A basic config looks like this:
+
+```yaml title="mkdocs.yml"
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+```
+
+As seen here, this also allows a filename (or other information) to be displayed, by adding a `title` attribute to the first line of the block.
+
+To highlight inline code blocks, enable the `pymdownx.inlinehilite` extension and start the block with `#!` followed by the language name.
+
+Full documentation [here](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/).
+
 ## Creation and revision dates
 
 Add and [configure](https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/index.html) the plugin:
