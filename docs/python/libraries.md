@@ -14,6 +14,35 @@ If there are problems with the contents of the `Namespace` object, call `parser.
 
 (But it might be easier [with Click](https://stackoverflow.com/a/44349292)).
 
+## lz4
+
+Bindings for Yann Collet's [LZ4](https://lz4.github.io/lz4/) compression library.
+
+The `frame` interface deals with both the compressed data and its container, and `lz4.frame.open()` is probably what you want to use.
+The `block` interface deals with plain blocks of compressed data.
+
+[Docs](https://python-lz4.readthedocs.io/en/stable/index.html) | [Repo](https://github.com/python-lz4/python-lz4)
+
+### lz4json
+
+This is a variant of LZ4 used in various Mozilla projects.
+It pre-dates the full standardisation of the Frame format (hence needing special treatment), but is otherwise compliant.
+
+It comprises a fixed eight-byte header, followed by a single Block.
+Therefore to decode an `lz4json` file:
+
+```python
+with open(filename, "rb") as fh:
+    if (magic := fh.read(8)) != b"mozLz40\0":
+        print(f"{filename}: Unrecognised magic number '{magic}'")
+
+    payload = lz4.block.decompress(fh.read())
+```
+
+This is basically what [`lz4jsoncat` does](https://github.com/andikleen/lz4json/blob/master/lz4jsoncat.c#L66-L72), except the bindings work out the sizes for you.
+
+(Note that there is [a plan to (eventually) replace it with a more standard compression format](https://bugzilla.mozilla.org/show_bug.cgi?id=1209390).)
+
 ## platformdirs
 
 Determine platform-specific directories for config files and user data.
