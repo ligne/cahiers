@@ -1,5 +1,6 @@
 appdirs
 Graphviz
+IDNA
 inlinehilite
 jsoncat
 linenums
@@ -8,6 +9,7 @@ mdformat
 mkdocs
 moz
 mypy
+pathlib
 platformdirs
 pycountry
 pydeps
@@ -21,3 +23,4 @@ timeago
 timezone
 VCS
 Yann
+yarl

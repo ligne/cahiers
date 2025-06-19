@@ -63,3 +63,13 @@ Detects exceptions and retries with exponential backoff, capping the number of r
 Basically just applies reasonable defaults to [tenacity](https://github.com/jd/tenacity).
 
 [Repo](https://github.com/hynek/stamina) | [Docs](https://stamina.hynek.me/en/stable/)
+
+## yarl
+
+Parsing and modifying URLs with an immutable, `pathlib`-inspired API.
+It supports query string fields with multiple values, and automatically handles IDNA- and percent-encoding.
+
+Each part of the URL can be accessed individually, with variants for the encoded value (`raw_` prefix) and modifying/unsetting (`with_` prefix).
+Additionally, it overloads the `/` operator for concatenating paths and `%` for applying a dict of parameters.
+
+[Docs](https://yarl.aio-libs.org/en/latest/) | [Repo](https://github.com/aio-libs/yarl)
