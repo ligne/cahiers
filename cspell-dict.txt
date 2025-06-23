@@ -9,6 +9,7 @@ mdformat
 mkdocs
 moz
 mypy
+nongreedy
 pathlib
 platformdirs
 pycountry
