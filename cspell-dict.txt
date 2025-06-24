@@ -10,6 +10,7 @@ mkdocs
 moz
 mypy
 nongreedy
+noout
 pathlib
 platformdirs
 pycountry
@@ -20,8 +21,10 @@ pyproject
 pytest
 superfences
 testchanges
+textconv
 timeago
 timezone
 VCS
+worktree
 Yann
 yarl

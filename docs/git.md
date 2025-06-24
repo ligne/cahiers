@@ -2,6 +2,23 @@
 
 Everyone's favourite VCS.
 
+## Diff
+
+### Readable diffs of binary files
+
+Well, binary-like files at least.
+Anything in a format that is not directly legible, in this case PEM-encoded certificates.
+Unlike smudge/clean filters this will not touch either the worktree file or its blob.
+
+First define a diff driver, either globally or locally: `git config diff.crt.textconv "openssl x509 -noout -text -in"`.
+
+Then add a pattern to associate the new driver with some files: `*.crt diff=crt`.
+This can go in `.gitattributes` or the local or global `attributes` files, depending on who might be interested in using it.
+
+Git will now convert the certificate into its textual form before feeding it to diff.
+
+More details [here](https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html#_performing_text_diffs_of_binary_files).
+
 ## Index
 
 ### View changes to the index
