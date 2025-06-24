@@ -18,7 +18,9 @@ pydeps
 pygrep
 pymdownx
 pyproject
+pysrt
 pytest
+srt
 superfences
 testchanges
 textconv

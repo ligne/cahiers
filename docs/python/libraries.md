@@ -58,6 +58,15 @@ Wraps Debian's [`iso-codes` data](https://salsa.debian.org/iso-codes-team/iso-co
 
 [Repo and docs](https://github.com/pycountry/pycountry)
 
+## srt
+
+Parsing and modifying SRT subtitles files, including time-shifting and combining multiple files into one.
+It also provides [a command-line tool](https://github.com/cdown/srt/tree/develop/srt_tools).
+
+An alternative is `pysrt`.
+
+[Docs](https://srt.readthedocs.io/en/latest/quickstart.html) | [Repo](https://github.com/cdown/srt)
+
 ## stamina
 
 Decorator-based library for handling transient errors.
