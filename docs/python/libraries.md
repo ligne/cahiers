@@ -45,6 +45,13 @@ This is basically what [`lz4jsoncat` does](https://github.com/andikleen/lz4json/
 
 (Note that there is [a plan to (eventually) replace it with a more standard compression format](https://bugzilla.mozilla.org/show_bug.cgi?id=1209390).)
 
+## pint
+
+Associate quantities with physical units.
+These propagate through mathematical operations and can be converted.
+
+[Docs](https://pint.readthedocs.io/en/stable/) | [Repo](https://github.com/hgrecco/pint)
+
 ## platformdirs
 
 Determine platform-specific directories for config files and user data.
