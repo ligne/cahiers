@@ -7,7 +7,9 @@ linenums
 linters
 mdformat
 mkdocs
+moto
 moz
+msgspec
 mypy
 nongreedy
 noout

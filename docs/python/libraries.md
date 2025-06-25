@@ -45,6 +45,19 @@ This is basically what [`lz4jsoncat` does](https://github.com/andikleen/lz4json/
 
 (Note that there is [a plan to (eventually) replace it with a more standard compression format](https://bugzilla.mozilla.org/show_bug.cgi?id=1209390).)
 
+## moto
+
+Mocks for AWS services.
+
+[Docs](https://docs.getmoto.org/en/latest/) | [Repo](https://github.com/getmoto/moto)
+
+## msgspec
+
+Fast serialisation and validation.
+Supports JSON, MessagePack, YAML, and TOML.
+
+[Docs](https://jcristharif.com/msgspec/) | [Repo](https://github.com/jcrist/msgspec/)
+
 ## pint
 
 Associate quantities with physical units.
@@ -81,6 +94,19 @@ Detects exceptions and retries with exponential backoff, capping the number of r
 Basically just applies reasonable defaults to [tenacity](https://github.com/jd/tenacity).
 
 [Repo](https://github.com/hynek/stamina) | [Docs](https://stamina.hynek.me/en/stable/)
+
+## svg.py
+
+Simple, type-safe library for generating SVG files.
+It can also be [used online](https://svg.orsinium.dev/).
+
+[Docs and repo](https://github.com/orsinium-labs/svg.py)
+
+## uncertainties
+
+Calculate with automatic error propagation.
+
+[Docs](https://pythonhosted.org/uncertainties/) | [Repo](https://github.com/lmfit/uncertainties)
 
 ## yarl
 
