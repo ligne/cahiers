@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -471,6 +471,57 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lz4" class="md-nav__link">
+    <span class="md-ellipsis">
+      lz4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="lz4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lz4json" class="md-nav__link">
+    <span class="md-ellipsis">
+      lz4json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moto" class="md-nav__link">
+    <span class="md-ellipsis">
+      moto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#msgspec" class="md-nav__link">
+    <span class="md-ellipsis">
+      msgspec
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pint" class="md-nav__link">
+    <span class="md-ellipsis">
+      pint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#platformdirs" class="md-nav__link">
     <span class="md-ellipsis">
       platformdirs
@@ -489,9 +540,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#srt" class="md-nav__link">
+    <span class="md-ellipsis">
+      srt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stamina" class="md-nav__link">
     <span class="md-ellipsis">
       stamina
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#svgpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      svg.py
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uncertainties" class="md-nav__link">
+    <span class="md-ellipsis">
+      uncertainties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yarl" class="md-nav__link">
+    <span class="md-ellipsis">
+      yarl
     </span>
   </a>
   
@@ -558,6 +645,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vim
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -574,7 +683,7 @@
 
 
   
-    <a href="https://github.com/ligne/cahiers/edit/main/docs/python/libraries.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/ligne/cahiers/edit/main/docs/python/libraries.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -583,6 +692,7 @@
 
 
 <h1 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h1>
+<p><a href="https://hugovk.github.io/top-pypi-packages/">Top PyPI packages</a>.</p>
 <h2 id="argparse">argparse<a class="headerlink" href="#argparse" title="Permanent link">&para;</a></h2>
 <p><a href="https://docs.python.org/3/library/argparse.html">Docs</a></p>
 <h3 id="complex-validation">Complex validation<a class="headerlink" href="#complex-validation" title="Permanent link">&para;</a></h3>
@@ -591,6 +701,35 @@ In particular there's no guarantee that the arguments will be provided in any pa
 <p>In such cases it can be better to defer validation until after the parser has run.
 If there are problems with the contents of the <code>Namespace</code> object, call <code>parser.error("...")</code> to exit with a tidy and consistent usage message <a href="https://stackoverflow.com/questions/49000217/cross-argument-validation-in-argparse">(source)</a>.</p>
 <p>(But it might be easier <a href="https://stackoverflow.com/a/44349292">with Click</a>).</p>
+<h2 id="lz4">lz4<a class="headerlink" href="#lz4" title="Permanent link">&para;</a></h2>
+<p>Bindings for Yann Collet's <a href="https://lz4.github.io/lz4/">LZ4</a> compression library.</p>
+<p>The <code>frame</code> interface deals with both the compressed data and its container, and <code>lz4.frame.open()</code> is probably what you want to use.
+The <code>block</code> interface deals with plain blocks of compressed data.</p>
+<p><a href="https://python-lz4.readthedocs.io/en/stable/index.html">Docs</a> | <a href="https://github.com/python-lz4/python-lz4">Repo</a></p>
+<h3 id="lz4json">lz4json<a class="headerlink" href="#lz4json" title="Permanent link">&para;</a></h3>
+<p>This is a variant of LZ4 used in various Mozilla projects.
+It pre-dates the full standardisation of the Frame format (hence needing special treatment), but is otherwise compliant.</p>
+<p>It comprises a fixed eight-byte header, followed by a single Block.
+Therefore to decode an <code>lz4json</code> file:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">magic</span> <span class="o">:=</span> <span class="n">fh</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span> <span class="o">!=</span> <span class="sa">b</span><span class="s2">&quot;mozLz40</span><span class="se">\0</span><span class="s2">&quot;</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">: Unrecognised magic number &#39;</span><span class="si">{</span><span class="n">magic</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">payload</span> <span class="o">=</span> <span class="n">lz4</span><span class="o">.</span><span class="n">block</span><span class="o">.</span><span class="n">decompress</span><span class="p">(</span><span class="n">fh</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</code></pre></div>
+<p>This is basically what <a href="https://github.com/andikleen/lz4json/blob/master/lz4jsoncat.c#L66-L72"><code>lz4jsoncat</code> does</a>, except the bindings work out the sizes for you.</p>
+<p>(Note that there is <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1209390">a plan to (eventually) replace it with a more standard compression format</a>.)</p>
+<h2 id="moto">moto<a class="headerlink" href="#moto" title="Permanent link">&para;</a></h2>
+<p>Mocks for AWS services.</p>
+<p><a href="https://docs.getmoto.org/en/latest/">Docs</a> | <a href="https://github.com/getmoto/moto">Repo</a></p>
+<h2 id="msgspec">msgspec<a class="headerlink" href="#msgspec" title="Permanent link">&para;</a></h2>
+<p>Fast serialisation and validation.
+Supports JSON, MessagePack, YAML, and TOML.</p>
+<p><a href="https://jcristharif.com/msgspec/">Docs</a> | <a href="https://github.com/jcrist/msgspec/">Repo</a></p>
+<h2 id="pint">pint<a class="headerlink" href="#pint" title="Permanent link">&para;</a></h2>
+<p>Associate quantities with physical units.
+These propagate through mathematical operations and can be converted.</p>
+<p><a href="https://pint.readthedocs.io/en/stable/">Docs</a> | <a href="https://github.com/hgrecco/pint">Repo</a></p>
 <h2 id="platformdirs">platformdirs<a class="headerlink" href="#platformdirs" title="Permanent link">&para;</a></h2>
 <p>Determine platform-specific directories for config files and user data.
 A fork of the sadly-unmaintained <code>appdirs</code>.</p>
@@ -598,11 +737,29 @@ A fork of the sadly-unmaintained <code>appdirs</code>.</p>
 <h2 id="pycountry">pycountry<a class="headerlink" href="#pycountry" title="Permanent link">&para;</a></h2>
 <p>Wraps Debian's <a href="https://salsa.debian.org/iso-codes-team/iso-codes"><code>iso-codes</code> data</a> databases for ISO country, language, and script codes, along with their translations.</p>
 <p><a href="https://github.com/pycountry/pycountry">Repo and docs</a></p>
+<h2 id="srt">srt<a class="headerlink" href="#srt" title="Permanent link">&para;</a></h2>
+<p>Parsing and modifying SRT subtitles files, including time-shifting and combining multiple files into one.
+It also provides <a href="https://github.com/cdown/srt/tree/develop/srt_tools">a command-line tool</a>.</p>
+<p>An alternative is <code>pysrt</code>.</p>
+<p><a href="https://srt.readthedocs.io/en/latest/quickstart.html">Docs</a> | <a href="https://github.com/cdown/srt">Repo</a></p>
 <h2 id="stamina">stamina<a class="headerlink" href="#stamina" title="Permanent link">&para;</a></h2>
 <p>Decorator-based library for handling transient errors.
 Detects exceptions and retries with exponential backoff, capping the number of retries and total time.
 Basically just applies reasonable defaults to <a href="https://github.com/jd/tenacity">tenacity</a>.</p>
 <p><a href="https://github.com/hynek/stamina">Repo</a> | <a href="https://stamina.hynek.me/en/stable/">Docs</a></p>
+<h2 id="svgpy">svg.py<a class="headerlink" href="#svgpy" title="Permanent link">&para;</a></h2>
+<p>Simple, type-safe library for generating SVG files.
+It can also be <a href="https://svg.orsinium.dev/">used online</a>.</p>
+<p><a href="https://github.com/orsinium-labs/svg.py">Docs and repo</a></p>
+<h2 id="uncertainties">uncertainties<a class="headerlink" href="#uncertainties" title="Permanent link">&para;</a></h2>
+<p>Calculate with automatic error propagation.</p>
+<p><a href="https://pythonhosted.org/uncertainties/">Docs</a> | <a href="https://github.com/lmfit/uncertainties">Repo</a></p>
+<h2 id="yarl">yarl<a class="headerlink" href="#yarl" title="Permanent link">&para;</a></h2>
+<p>Parsing and modifying URLs with an immutable, <code>pathlib</code>-inspired API.
+It supports query string fields with multiple values, and automatically handles IDNA- and percent-encoding.</p>
+<p>Each part of the URL can be accessed individually, with variants for the encoded value (<code>raw_</code> prefix) and modifying/unsetting (<code>with_</code> prefix).
+Additionally, it overloads the <code>/</code> operator for concatenating paths and <code>%</code> for applying a dict of parameters.</p>
+<p><a href="https://yarl.aio-libs.org/en/latest/">Docs</a> | <a href="https://github.com/aio-libs/yarl">Repo</a></p>
 
 
 
@@ -625,7 +782,7 @@ Basically just applies reasonable defaults to <a href="https://github.com/jd/ten
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 10, 2025 13:44:52 BST"><span class="timeago" datetime="2025-06-10T13:44:52+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 10, 2025 13:44:52 BST">2025-06-10</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 25, 2025 13:25:54 BST"><span class="timeago" datetime="2025-06-25T13:25:54+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 25, 2025 13:25:54 BST">2025-06-25</span>
   </span>
 
     
@@ -686,7 +843,7 @@ Basically just applies reasonable defaults to <a href="https://github.com/jd/ten
       <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "toc.integrate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
         <script src="../../js/timeago.min.js"></script>
       

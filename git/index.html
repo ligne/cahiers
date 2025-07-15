@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -294,6 +294,30 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diff
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#readable-diffs-of-binary-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Readable diffs of binary files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#index" class="md-nav__link">
@@ -664,6 +688,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vim
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -680,7 +726,7 @@
 
 
   
-    <a href="https://github.com/ligne/cahiers/edit/main/docs/git.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/ligne/cahiers/edit/main/docs/git.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -690,6 +736,16 @@
 
 <h1 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
 <p>Everyone's favourite VCS.</p>
+<h2 id="diff">Diff<a class="headerlink" href="#diff" title="Permanent link">&para;</a></h2>
+<h3 id="readable-diffs-of-binary-files">Readable diffs of binary files<a class="headerlink" href="#readable-diffs-of-binary-files" title="Permanent link">&para;</a></h3>
+<p>Well, binary-like files at least.
+Anything in a format that is not directly legible, in this case PEM-encoded certificates.
+Unlike smudge/clean filters this will not touch either the worktree file or its blob.</p>
+<p>First define a diff driver, either globally or locally: <code>git config diff.crt.textconv "openssl x509 -noout -text -in"</code>.</p>
+<p>Then add a pattern to associate the new driver with some files: <code>*.crt diff=crt</code>.
+This can go in <code>.gitattributes</code> or the local or global <code>attributes</code> files, depending on who might be interested in using it.</p>
+<p>Git will now convert the certificate into its textual form before feeding it to diff.</p>
+<p>More details <a href="https://www.kernel.org/pub/software/scm/git/docs/gitattributes.html#_performing_text_diffs_of_binary_files">here</a>.</p>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">&para;</a></h2>
 <h3 id="view-changes-to-the-index">View changes to the index<a class="headerlink" href="#view-changes-to-the-index" title="Permanent link">&para;</a></h3>
 <p>By default <code>git diff</code> only shows <em>unstaged</em> changes.
@@ -756,7 +812,7 @@ Some tools (including <code>uv</code>, <code>pytest</code> and <code>mypy</code>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="May 20, 2025 13:39:21 BST"><span class="timeago" datetime="2025-05-20T13:39:21+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="May 20, 2025 13:39:21 BST">2025-05-20</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 24, 2025 13:16:27 BST"><span class="timeago" datetime="2025-06-24T13:16:27+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 24, 2025 13:16:27 BST">2025-06-24</span>
   </span>
 
     
@@ -817,7 +873,7 @@ Some tools (including <code>uv</code>, <code>pytest</code> and <code>mypy</code>
       <script id="__config" type="application/json">{"base": "..", "features": ["content.action.edit", "toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
         <script src="../js/timeago.min.js"></script>
       
