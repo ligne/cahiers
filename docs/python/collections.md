@@ -26,3 +26,23 @@ This also applies when using them as class methods: only the first argument is r
 Python's sorting algorithm only uses the objects' `.__lt__()` method.
 With sets, this determines whether one is a proper subset of the other and has nothing to do with ordering.
 Therefore `sorted([s1, s2, s3])` probably won't do what you want (sorting the content of a set does, of course).
+
+## Counter
+
+[Docs](https://docs.python.org/3/library/collections.html#counter-objects)
+
+### Mathematical operations
+
+`Counter`s can be combined using the `.update()` and `.subtract()` methods, which will perform in-place addition and subtraction between corresponding elements.
+
+There is also a second, operator-based interface that makes them behave like multisets.
+With these, the result of an operation will *only* include elements whose counts are greater than zero.
+
+- Binary `+` and `-` do what you would expect.
+- Unary `+` and `-` are equivalent to adding to/subtracting from an empty `Counter`.
+    This effectively selects only the positive and (the absolute values of) the negative elements, respectively.
+- Binary `&` and `|` return the minimum and maximum of each corresponding pair of elements.
+
+(In-place versions of these are also available.)
+
+The comparison operators (`>`, `>=`, `<`, `<=`) check for inclusion of one within the other, ie. that one is the subset of the other.
