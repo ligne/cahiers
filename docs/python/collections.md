@@ -36,7 +36,7 @@ Therefore `sorted([s1, s2, s3])` probably won't do what you want (sorting the co
 `Counter`s can be combined using the `.update()` and `.subtract()` methods, which will perform in-place addition and subtraction between corresponding elements.
 
 There is also a second, operator-based interface that makes them behave like multisets.
-With these, the result of an operation will *only* include elements whose counts are greater than zero.
+As such, the results of these operations will *only* include elements whose counts are greater than zero.
 
 - Binary `+` and `-` do what you would expect.
 - Unary `+` and `-` are equivalent to adding to/subtracting from an empty `Counter`.
