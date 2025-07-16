@@ -1,4 +1,7 @@
 appdirs
+asyncio
+dataclasses
+dbxs
 Graphviz
 IDNA
 inlinehilite
@@ -23,6 +26,7 @@ pymdownx
 pyproject
 pysrt
 pytest
+SQLI
 srt
 superfences
 testchanges

@@ -16,6 +16,20 @@ If there are problems with the contents of the `Namespace` object, call `parser.
 
 (But it might be easier [with Click](https://stackoverflow.com/a/44349292)).
 
+## dbxs
+
+Create a data-access layer by attaching raw SQL queries to functions at import-time.
+A bit like Asterisk's `func_odbc.conf`?
+
+It binds the function parameters to the placeholders, and automatically inflates the result(s) to (an iterator of) dataclasses.
+It can help prevent SQLI and improve type-safety.
+
+It's not stable yet, and in particular it only supports async database interfaces.
+(Though *contra* the README, it does support `asyncio` as well as Twisted.)
+But it could be useful as a very lightweight database layer when a full-blown ORM would be overkill.
+
+[Docs](https://dbxs.readthedocs.io/en/latest/) | [Repo](https://github.com/glyph/dbxs)
+
 ## lz4
 
 Bindings for Yann Collet's [LZ4](https://lz4.github.io/lz4/) compression library.
