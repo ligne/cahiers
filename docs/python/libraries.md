@@ -16,6 +16,15 @@ If there are problems with the contents of the `Namespace` object, call `parser.
 
 (But it might be easier [with Click](https://stackoverflow.com/a/44349292)).
 
+## DateType
+
+Wraps the `datetime` module to distinguish between `date` and `datetime`, and between timezone-aware and -naïve datetimes.
+Recommended by the official documentation!
+
+There doesn't appear to be any documentation as such, but the repo does contain [some examples](https://github.com/glyph/DateType/blob/trunk/tryit.py).
+
+[Repo](https://github.com/glyph/DateType)
+
 ## dbxs
 
 Create a data-access layer by attaching raw SQL queries to functions at import-time.
