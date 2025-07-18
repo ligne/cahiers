@@ -16,6 +16,23 @@ If there are problems with the contents of the `Namespace` object, call `parser.
 
 (But it might be easier [with Click](https://stackoverflow.com/a/44349292)).
 
+## datetime
+
+Dates, times, datetimes and intervals.
+
+It's a lot more manageable when `import datetime as dt`.
+
+[Docs](https://docs.python.org/3/library/datetime.html)
+
+### Format codes
+
+As used by `.strptime()`, `.strftime()`, and `format()`/f-strings.
+
+There is a table of all the codes [in the docs](https://docs.python.org/3/library/datetime.html#format-codes).
+Since it delegates these to the C library, `man 3 strftime` is useful too.
+
+If that's not enough there are also [static](https://strftime.org/) and [interactive](https://www.strfti.me/) websites.
+
 ## DateType
 
 Wraps the `datetime` module to distinguish between `date` and `datetime`, and between timezone-aware and -naïve datetimes.
