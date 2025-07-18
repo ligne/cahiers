@@ -28,6 +28,7 @@ pymdownx
 pyproject
 pysrt
 pytest
+sed
 SQLI
 srt
 superfences
