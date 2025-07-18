@@ -471,6 +471,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#datetype" class="md-nav__link">
+    <span class="md-ellipsis">
+      DateType
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dbxs" class="md-nav__link">
+    <span class="md-ellipsis">
+      dbxs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lz4" class="md-nav__link">
     <span class="md-ellipsis">
       lz4
@@ -701,6 +719,20 @@ In particular there's no guarantee that the arguments will be provided in any pa
 <p>In such cases it can be better to defer validation until after the parser has run.
 If there are problems with the contents of the <code>Namespace</code> object, call <code>parser.error("...")</code> to exit with a tidy and consistent usage message <a href="https://stackoverflow.com/questions/49000217/cross-argument-validation-in-argparse">(source)</a>.</p>
 <p>(But it might be easier <a href="https://stackoverflow.com/a/44349292">with Click</a>).</p>
+<h2 id="datetype">DateType<a class="headerlink" href="#datetype" title="Permanent link">&para;</a></h2>
+<p>Wraps the <code>datetime</code> module to distinguish between <code>date</code> and <code>datetime</code>, and between timezone-aware and -naïve datetimes.
+Recommended by the official documentation!</p>
+<p>There doesn't appear to be any documentation as such, but the repo does contain <a href="https://github.com/glyph/DateType/blob/trunk/tryit.py">some examples</a>.</p>
+<p><a href="https://github.com/glyph/DateType">Repo</a></p>
+<h2 id="dbxs">dbxs<a class="headerlink" href="#dbxs" title="Permanent link">&para;</a></h2>
+<p>Create a data-access layer by attaching raw SQL queries to functions at import-time.
+A bit like Asterisk's <code>func_odbc.conf</code>?</p>
+<p>It binds the function parameters to the placeholders, and automatically inflates the result(s) to (an iterator of) dataclasses.
+It can help prevent SQLI and improve type-safety.</p>
+<p>It's not stable yet, and in particular it only supports async database interfaces.
+(Though <em>contra</em> the README, it does support <code>asyncio</code> as well as Twisted.)
+But it could be useful as a very lightweight database layer when a full-blown ORM would be overkill.</p>
+<p><a href="https://dbxs.readthedocs.io/en/latest/">Docs</a> | <a href="https://github.com/glyph/dbxs">Repo</a></p>
 <h2 id="lz4">lz4<a class="headerlink" href="#lz4" title="Permanent link">&para;</a></h2>
 <p>Bindings for Yann Collet's <a href="https://lz4.github.io/lz4/">LZ4</a> compression library.</p>
 <p>The <code>frame</code> interface deals with both the compressed data and its container, and <code>lz4.frame.open()</code> is probably what you want to use.
@@ -782,7 +814,7 @@ Additionally, it overloads the <code>/</code> operator for concatenating paths a
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="June 25, 2025 13:25:54 BST"><span class="timeago" datetime="2025-06-25T13:25:54+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="June 25, 2025 13:25:54 BST">2025-06-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 16, 2025 13:47:52 BST"><span class="timeago" datetime="2025-07-16T13:47:52+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 16, 2025 13:47:52 BST">2025-07-16</span>
   </span>
 
     
