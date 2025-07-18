@@ -94,3 +94,9 @@ There is a collection of per-language rules [here](https://github.com/github/git
 To ignore something that's only relevant locally or for a short time: `echo boring/ >> .git/info/exclude`.
 If it's a directory, doing `echo \* > boring/.gitignore` means the ignore will automatically get cleaned up when it's deleted.
 Some tools (including `uv`, `pytest` and `mypy`) do this automatically to their cache directories, so check before ignoring them explicitly.
+
+## Repository administration
+
+### git-sizer
+
+[Warns about](https://github.com/github/git-sizer) possible size-related issues that can cause slowness.
