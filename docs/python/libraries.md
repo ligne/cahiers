@@ -148,6 +148,15 @@ Calculate with automatic error propagation.
 
 [Docs](https://pythonhosted.org/uncertainties/) | [Repo](https://github.com/lmfit/uncertainties)
 
+## unidecode
+
+Transliterates Unicode to ASCII.
+Like `Text::Unidecode`.
+
+It includes a `unidecode` program for use from the command line.
+
+[Docs and Repo](https://github.com/avian2/unidecode)
+
 ## yarl
 
 Parsing and modifying URLs with an immutable, `pathlib`-inspired API.

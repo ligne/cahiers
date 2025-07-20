@@ -37,6 +37,7 @@ testchanges
 textconv
 timeago
 timezone
+unidecode
 VCS
 worktree
 WSL
