@@ -41,7 +41,7 @@ Add `-c ORIG_HEAD ...` when committing to use it as the basis of the new message
 
 ### Squashing
 
-In the general case this can be done an interactive rebase, and the last commit can be corrected with `git add ...; git commit --amend [--no-edit]`.
+In the general case this can be done with an interactive rebase, and the last commit can be corrected with `git add ...; git commit --amend [--no-edit]`.
 But if the last few commits are a mess that need squashing into one, run `git reset --soft HEAD~n` and prepare the final commit.
 
 ## Branches
