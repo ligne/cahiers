@@ -44,6 +44,18 @@ Add `-c ORIG_HEAD ...` when committing to use it as the basis of the new message
 In the general case this can be done with an interactive rebase, and the last commit can be corrected with `git add ...; git commit --amend [--no-edit]`.
 But if the last few commits are a mess that need squashing into one, run `git reset --soft HEAD~n` and prepare the final commit.
 
+### Overriding the date
+
+I've got some old code I'd like to import into git while keeping a record of approximately when I wrote it.
+
+The simple solution is using commit's [`--date` flag](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---datedate).
+This can be an absolute date/timestamp (eg. ISO 8601) or a relative one (eg. "yesterday", "last week", "20 years 1 day ago at tea time").
+Although this only sets the author date, it should be adequate for most purposes: the default output of `log` and `show` will show the desired date.
+
+However there are a few places where the commit date is important, such as `git log --since/after/until/before`.
+If it's necessary for these to work, it's possible to set the committer date through the [`GIT_COMMITTER_DATE` environment variable](https://git-scm.com/docs/git-commit#_commit_information).
+They can be set in bulk on a whole series of commits with `git rebase --committer-date-is-author-date <after-this-commit>`.
+
 ## Branches
 
 ### Turn commits into a new branch
