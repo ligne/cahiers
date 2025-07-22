@@ -471,6 +471,30 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#datetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      datetime
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="datetime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Format codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#datetype" class="md-nav__link">
     <span class="md-ellipsis">
       DateType
@@ -588,6 +612,15 @@
   <a href="#uncertainties" class="md-nav__link">
     <span class="md-ellipsis">
       uncertainties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidecode" class="md-nav__link">
+    <span class="md-ellipsis">
+      unidecode
     </span>
   </a>
   
@@ -719,6 +752,15 @@ In particular there's no guarantee that the arguments will be provided in any pa
 <p>In such cases it can be better to defer validation until after the parser has run.
 If there are problems with the contents of the <code>Namespace</code> object, call <code>parser.error("...")</code> to exit with a tidy and consistent usage message <a href="https://stackoverflow.com/questions/49000217/cross-argument-validation-in-argparse">(source)</a>.</p>
 <p>(But it might be easier <a href="https://stackoverflow.com/a/44349292">with Click</a>).</p>
+<h2 id="datetime">datetime<a class="headerlink" href="#datetime" title="Permanent link">&para;</a></h2>
+<p>Dates, times, datetimes and intervals.</p>
+<p>It's a lot more manageable when <code>import datetime as dt</code>.</p>
+<p><a href="https://docs.python.org/3/library/datetime.html">Docs</a></p>
+<h3 id="format-codes">Format codes<a class="headerlink" href="#format-codes" title="Permanent link">&para;</a></h3>
+<p>As used by <code>.strptime()</code>, <code>.strftime()</code>, and <code>format()</code>/f-strings.</p>
+<p>There is a table of all the codes <a href="https://docs.python.org/3/library/datetime.html#format-codes">in the docs</a>.
+Since it delegates these to the C library, <code>man 3 strftime</code> is useful too.</p>
+<p>If that's not enough there are also <a href="https://strftime.org/">static</a> and <a href="https://www.strfti.me/">interactive</a> websites.</p>
 <h2 id="datetype">DateType<a class="headerlink" href="#datetype" title="Permanent link">&para;</a></h2>
 <p>Wraps the <code>datetime</code> module to distinguish between <code>date</code> and <code>datetime</code>, and between timezone-aware and -naïve datetimes.
 Recommended by the official documentation!</p>
@@ -786,6 +828,11 @@ It can also be <a href="https://svg.orsinium.dev/">used online</a>.</p>
 <h2 id="uncertainties">uncertainties<a class="headerlink" href="#uncertainties" title="Permanent link">&para;</a></h2>
 <p>Calculate with automatic error propagation.</p>
 <p><a href="https://pythonhosted.org/uncertainties/">Docs</a> | <a href="https://github.com/lmfit/uncertainties">Repo</a></p>
+<h2 id="unidecode">unidecode<a class="headerlink" href="#unidecode" title="Permanent link">&para;</a></h2>
+<p>Transliterates Unicode to ASCII.
+Like <code>Text::Unidecode</code>.</p>
+<p>It includes a <code>unidecode</code> program for use from the command line.</p>
+<p><a href="https://github.com/avian2/unidecode">Docs and Repo</a></p>
 <h2 id="yarl">yarl<a class="headerlink" href="#yarl" title="Permanent link">&para;</a></h2>
 <p>Parsing and modifying URLs with an immutable, <code>pathlib</code>-inspired API.
 It supports query string fields with multiple values, and automatically handles IDNA- and percent-encoding.</p>
@@ -814,7 +861,7 @@ Additionally, it overloads the <code>/</code> operator for concatenating paths a
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 16, 2025 13:47:52 BST"><span class="timeago" datetime="2025-07-16T13:47:52+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 16, 2025 13:47:52 BST">2025-07-16</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 20, 2025 14:46:49 BST"><span class="timeago" datetime="2025-07-20T14:46:49+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 20, 2025 14:46:49 BST">2025-07-20</span>
   </span>
 
     

@@ -380,6 +380,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#overriding-the-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overriding the date
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -782,8 +791,16 @@ Add <code>--staged</code> to see what changes are staged for the next commit, or
 <p>The old commit will still be available as <code>ORIG_HEAD</code>.
 Add <code>-c ORIG_HEAD ...</code> when committing to use it as the basis of the new message.</p>
 <h3 id="squashing">Squashing<a class="headerlink" href="#squashing" title="Permanent link">&para;</a></h3>
-<p>In the general case this can be done an interactive rebase, and the last commit can be corrected with <code>git add ...; git commit --amend [--no-edit]</code>.
+<p>In the general case this can be done with an interactive rebase, and the last commit can be corrected with <code>git add ...; git commit --amend [--no-edit]</code>.
 But if the last few commits are a mess that need squashing into one, run <code>git reset --soft HEAD~n</code> and prepare the final commit.</p>
+<h3 id="overriding-the-date">Overriding the date<a class="headerlink" href="#overriding-the-date" title="Permanent link">&para;</a></h3>
+<p>I've got some old code I'd like to import into git while keeping a record of approximately when I wrote it.</p>
+<p>The simple solution is using commit's <a href="https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---datedate"><code>--date</code> flag</a>.
+This can be an absolute date/timestamp (eg. ISO 8601) or a relative one (eg. "yesterday", "last week", "20 years 1 day ago at tea time").
+Although this only sets the author date, it should be adequate for most purposes: the default output of <code>log</code> and <code>show</code> will show the desired date.</p>
+<p>However there are a few places where the commit date is important, such as <code>git log --since/after/until/before</code>.
+If it's necessary for these to work, it's possible to set the committer date through the <a href="https://git-scm.com/docs/git-commit#_commit_information"><code>GIT_COMMITTER_DATE</code> environment variable</a>.
+They can be set in bulk on a whole series of commits with <code>git rebase --committer-date-is-author-date &lt;after-this-commit&gt;</code>.</p>
 <h2 id="branches">Branches<a class="headerlink" href="#branches" title="Permanent link">&para;</a></h2>
 <h3 id="turn-commits-into-a-new-branch">Turn commits into a new branch<a class="headerlink" href="#turn-commits-into-a-new-branch" title="Permanent link">&para;</a></h3>
 <p>To turn the most recent commits into a new branch:</p>
@@ -839,7 +856,7 @@ Some tools (including <code>uv</code>, <code>pytest</code> and <code>mypy</code>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 18, 2025 13:08:59 BST"><span class="timeago" datetime="2025-07-18T13:08:59+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 18, 2025 13:08:59 BST">2025-07-18</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 22, 2025 16:45:45 BST"><span class="timeago" datetime="2025-07-22T16:45:45+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 22, 2025 16:45:45 BST">2025-07-22</span>
   </span>
 
     
