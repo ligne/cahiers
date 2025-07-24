@@ -46,3 +46,20 @@ As such, the results of these operations will *only* include elements whose coun
 (In-place versions of these are also available.)
 
 The comparison operators (`>`, `>=`, `<`, `<=`) check for inclusion of one within the other, ie. that one is the subset of the other.
+
+## Deque
+
+[Docs](https://docs.python.org/3/library/collections.html#collections.deque)
+
+Double-ended queues.
+
+Unlike lists, `deque`s provide constant-time pushes and pops at *either* end, not just at the tail.
+They have the same `.append()`, `.extend()` and `.pop()` methods that operate at the tail, as well as homologous `.{append,extend,pop}left()` that operate at the head.
+The trade-off is that accessing the element at a given index is no longer constant-time, unless it's the head or tail.
+
+There is also a `.rotate()` method that rotates the elements `n` steps right (`n` positive) or left (`n` negative).
+
+They're unbounded, unless `maxlen` was provided to the constructor.
+In that case the `deque` will not grow beyond that size: once it's full, adding an element will result in an element being dropped from the opposite end.
+
+The documentation includes some [recipes](https://docs.python.org/3/library/collections.html#deque-recipes).

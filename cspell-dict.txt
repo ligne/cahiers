@@ -3,6 +3,7 @@ asyncio
 dataclasses
 datetimes
 dbxs
+deque
 Graphviz
 IDNA
 inlinehilite
@@ -10,6 +11,7 @@ isort
 jsoncat
 linenums
 linters
+maxlen
 mdformat
 mkdocs
 moto
