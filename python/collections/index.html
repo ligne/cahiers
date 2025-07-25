@@ -489,6 +489,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deque" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deque
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -655,6 +664,16 @@ As such, the results of these operations will <em>only</em> include elements who
 </ul>
 <p>(In-place versions of these are also available.)</p>
 <p>The comparison operators (<code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code>) check for inclusion of one within the other, ie. that one is the subset of the other.</p>
+<h2 id="deque">Deque<a class="headerlink" href="#deque" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.python.org/3/library/collections.html#collections.deque">Docs</a></p>
+<p>Double-ended queues.</p>
+<p>Unlike lists, <code>deque</code>s provide constant-time pushes and pops at <em>either</em> end, not just at the tail.
+They have the same <code>.append()</code>, <code>.extend()</code> and <code>.pop()</code> methods that operate at the tail, as well as homologous <code>.{append,extend,pop}left()</code> that operate at the head.
+The trade-off is that accessing the element at a given index is no longer constant-time, unless it's the head or tail.</p>
+<p>There is also a <code>.rotate()</code> method that rotates the elements <code>n</code> steps right (<code>n</code> positive) or left (<code>n</code> negative).</p>
+<p>They're unbounded, unless <code>maxlen</code> was provided to the constructor.
+In that case the <code>deque</code> will not grow beyond that size: once it's full, adding an element will result in an element being dropped from the opposite end.</p>
+<p>The documentation includes some <a href="https://docs.python.org/3/library/collections.html#deque-recipes">recipes</a>.</p>
 
 
 
@@ -677,7 +696,7 @@ As such, the results of these operations will <em>only</em> include elements who
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 15, 2025 14:22:34 BST"><span class="timeago" datetime="2025-07-15T14:22:34+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 15, 2025 14:22:34 BST">2025-07-15</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="July 24, 2025 13:48:26 BST"><span class="timeago" datetime="2025-07-24T13:48:26+01:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="July 24, 2025 13:48:26 BST">2025-07-24</span>
   </span>
 
     
