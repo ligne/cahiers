@@ -4,9 +4,12 @@ dataclasses
 datetimes
 dbxs
 deque
+Feedly
+freemium
 Graphviz
 IDNA
 inlinehilite
+Inoreader
 isort
 jsoncat
 linenums
