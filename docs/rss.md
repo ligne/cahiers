@@ -28,3 +28,5 @@ Saved stories are easy to browse, and are also useful for switching to a more co
 But ultimately the choice doesn't matter all that much as long as it provides [OPML export](https://en.wikipedia.org/wiki/OPML).
 
 There are also self-hosted options like [FreshRSS](https://freshrss.org/index.html).
+Or [NewsBlur, apparently](https://github.com/samuelclay/NewsBlur).
+Also [Selfoss](https://selfoss.aditu.de/) and [Tiny Tiny RSS](https://tt-rss.org/).
