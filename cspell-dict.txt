@@ -22,8 +22,12 @@ moz
 msgspec
 multisets
 mypy
+newsblur
+newsboat
 nongreedy
 noout
+passwordeval
+passwordfile
 pathlib
 platformdirs
 pycountry

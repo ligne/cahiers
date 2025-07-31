@@ -30,3 +30,32 @@ But ultimately the choice doesn't matter all that much as long as it provides [O
 There are also self-hosted options like [FreshRSS](https://freshrss.org/index.html).
 Or [NewsBlur, apparently](https://github.com/samuelclay/NewsBlur).
 Also [Selfoss](https://selfoss.aditu.de/) and [Tiny Tiny RSS](https://tt-rss.org/).
+
+## Terminal clients
+
+[Newsboat](https://newsboat.org/) looks pretty good and is about as intuitive as you could hope for from a complex TUI application.
+It integrates with aggregator services including NewsBlur and FreshRSS, so they stay in sync.
+
+### Configuration
+
+First, create some directories: `mkdir -p ~/.{config,local/share}/newsboat/`.
+
+The config goes in `~/.config/newsboat/config`.
+Comments start with `#`; backslashes and double quotes need to be backslash-escaped.
+
+To [connect it to NewsBlur](https://newsboat.org/releases/2.36/docs/newsboat.html#_newsblur):
+
+```
+urls-source "newsblur"
+newsblur-login "your-newsblur-account"
+newsblur-password "your-password"  # or newsblur-passwordfile/newsblur-passwordeval
+
+cookie-cache "~/.local/share/newsboat/cookies.txt"
+```
+
+Feeds go in `~/.config/newsboat/urls`.
+Again, this uses a very simple syntax: one feed per line, lines starting with `#` are comments.
+Use the usual `username:password@` URL syntax for authenticated feeds, but if so remember to restrict the file permissions.
+It can also use local files (as `file://` URLs), and [query-based virtual feeds](https://newsboat.org/releases/2.36/docs/newsboat.html#_query_feeds).
+
+It will refuse to start unless it has at least one feed or external source configured.
