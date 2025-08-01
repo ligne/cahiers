@@ -4,6 +4,7 @@ dataclasses
 datetimes
 dbxs
 deque
+elinks
 Feedly
 freemium
 Graphviz

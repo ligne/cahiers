@@ -53,6 +53,13 @@ newsblur-password "your-password"  # or newsblur-passwordfile/newsblur-passworde
 cookie-cache "~/.local/share/newsboat/cookies.txt"
 ```
 
+There are [lots more configuration options](https://newsboat.org/releases/2.36/docs/newsboat.html#_newsboat_configuration_commands) but some useful ones:
+
+- `show-read-feeds no` to hide feeds with no unread articles by default.
+    The `l` key toggles this.
+- `text-width` to wrap article text rather than using the full width of the screen.
+- `browser` to specify which command to invoke to launch an external browser (eg. `elinks` or `firefox %u`).
+
 Feeds go in `~/.config/newsboat/urls`.
 Again, this uses a very simple syntax: one feed per line, lines starting with `#` are comments.
 Use the usual `username:password@` URL syntax for authenticated feeds, but if so remember to restrict the file permissions.
