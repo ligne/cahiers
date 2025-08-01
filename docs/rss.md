@@ -56,6 +56,9 @@ cookie-cache "~/.local/share/newsboat/cookies.txt"
 Feeds go in `~/.config/newsboat/urls`.
 Again, this uses a very simple syntax: one feed per line, lines starting with `#` are comments.
 Use the usual `username:password@` URL syntax for authenticated feeds, but if so remember to restrict the file permissions.
-It can also use local files (as `file://` URLs), and [query-based virtual feeds](https://newsboat.org/releases/2.36/docs/newsboat.html#_query_feeds).
+It can also use local files (as `file://` URLs), maybe created by an external script.
+
+It's also possible to create [query-based virtual feeds](https://newsboat.org/releases/2.36/docs/newsboat.html#_query_feeds).
+They'll be empty unless `prepopulate-query-feeds` is enabled in the config.
 
 It will refuse to start unless it has at least one feed or external source configured.
