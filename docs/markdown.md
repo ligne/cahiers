@@ -15,3 +15,11 @@ Probably want to use it in conjunction with `mdformat-mkdocs`.
 
 There are a [variety of plugins](https://mdformat.readthedocs.io/en/stable/users/plugins.html).
 For the most part these either format the contents of code blocks, or add support for Markdown extensions.
+
+### Linter
+
+I didn't have any luck getting the Ruby `markdownlint` to work with `pre-commit`, so instead I'm using [`markdownlint-cli2`](https://github.com/DavidAnson/markdownlint-cli2#pre-commit).
+This is a fairly thin wrapper around the [markdownlint](https://github.com/DavidAnson/markdownlint/) library.
+
+There is an index of the rules [here](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md).
+As with other linters, they can be overridden using inline comments, in this case in HTML form; [syntax](https://github.com/DavidAnson/markdownlint/blob/main/README.md#configuration).
