@@ -21,5 +21,9 @@ For the most part these either format the contents of code blocks, or add suppor
 I didn't have any luck getting the Ruby `markdownlint` to work with `pre-commit`, so instead I'm using [`markdownlint-cli2`](https://github.com/DavidAnson/markdownlint-cli2#pre-commit).
 This is a fairly thin wrapper around the [markdownlint](https://github.com/DavidAnson/markdownlint/) library.
 
+The config can go in a whole plethora of files, but I prefer `.markdownlint.yaml`.
+This configures `markdownlint` itself, and is therefore tool-independent.
+The corollary to this is that it doesn't support tool-specific configuration, but converting just involves sticking everything in a `config:` mapping block in `.markdownlint-cli2.yaml`.
+
 There is an index of the rules [here](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md).
 As with other linters, they can be overridden using inline comments, in this case in HTML form; [syntax](https://github.com/DavidAnson/markdownlint/blob/main/README.md#configuration).
