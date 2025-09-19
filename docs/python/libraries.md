@@ -85,6 +85,17 @@ This is basically what [`lz4jsoncat` does](https://github.com/andikleen/lz4json/
 
 (Note that there is [a plan to (eventually) replace it with a more standard compression format](https://bugzilla.mozilla.org/show_bug.cgi?id=1209390).)
 
+## more-itertools
+
+Like `itertools`, but more so.
+
+Useful functions include:
+
+- [`more_itertools.only`](https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.only).
+    Like `next()` but raises an exception if there are any items remaining, so it's useful when a function returns a single-entry list for some reason.
+
+[Docs](https://more-itertools.readthedocs.io/en/stable/index.html) | [Repo](https://github.com/more-itertools/more-itertools)
+
 ## moto
 
 Mocks for AWS services.

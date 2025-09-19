@@ -12,6 +12,7 @@ IDNA
 inlinehilite
 Inoreader
 isort
+itertools
 jsoncat
 linenums
 linters
